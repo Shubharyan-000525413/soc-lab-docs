@@ -1,4 +1,4 @@
-# SOC Investigation Lab – Splunk Web Attack Analysis  
+# Lab Investigation Docs  
 Author: **Shubharyan Asthana**
 
 This repository contains a complete SOC (Security Operations Center) investigation report based on a simulated Splunk web server compromise.  
