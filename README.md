@@ -60,7 +60,7 @@ Click any .html file in the repository:
 
 siem-splunk-investigation.html
 
-malware-analysis-senior.html
+malware-analysis.html
 
 Then click:
 
