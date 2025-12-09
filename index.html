@@ -37,18 +37,6 @@
     .card p { font-size:13px; margin:6px 0 10px; color:#9ca3af; }
     .card small { font-size:11px; color:#6b7280; }
 
-    .pill {
-        display:inline-block;
-        padding:2px 7px;
-        border-radius:999px;
-        background:#022c22;
-        color:#6ee7b7;
-        font-size:10px;
-        text-transform:uppercase;
-        letter-spacing:.08em;
-        margin-right:4px;
-    }
-
     a.button {
         display:inline-flex;
         align-items:center;
@@ -64,6 +52,18 @@
         background:linear-gradient(135deg,#1d4ed8,#0f172a);
     }
     a.button span.icon { font-family:'JetBrains Mono',monospace; font-size:12px; margin-left:6px; }
+
+    .pill {
+        display:inline-block;
+        padding:2px 7px;
+        border-radius:999px;
+        background:#022c22;
+        color:#6ee7b7;
+        font-size:10px;
+        text-transform:uppercase;
+        letter-spacing:.08em;
+        margin-right:4px;
+    }
 
     .section-note { font-size:12px; color:#6b7280; margin-top:6px; }
 
@@ -84,18 +84,18 @@
 
     <h1>Security Investigation Portfolio</h1>
     <div class="subtitle">
-        Hands-on SOC and malware analysis documentation from TryHackMe Advent of Cyber 2025, published via GitHub Pages.
+        Hands-on SOC and offensive/defensive security documentation from TryHackMe Advent of Cyber 2025, published via GitHub Pages.
     </div>
 
     <h2>Splunk &amp; Log Analysis (SOC)</h2>
     <div class="grid">
         <div class="card">
-            <h3>SIEM Lab Report - Splunk </h3>
+            <h3>Splunk Web Application Compromise – Senior SOC Report</h3>
             <p>
-                Full Tier 2/3-style incident report of a web server compromise using Splunk: spike detection, attacker IP fingerprinting, SQLi and RCE reconstruction, C2 correlation, and MITRE ATT&amp;CK mapping.
+                Tier 2/3-style incident report of a web server compromise using Splunk: spike detection, attacker IP fingerprinting, SQLi and RCE reconstruction, C2 correlation, and MITRE ATT&amp;CK mapping.
             </p>
             <small>Includes SPL queries, attack chain reconstruction, and remediation recommendations.</small><br>
-            <a href="Splunk_Lab_Report.html" class="button">
+            <a href="siem-splunk-investigation.html" class="button">
                 View Splunk Investigation
                 <span class="icon">&gt;&gt;</span>
             </a>
@@ -108,17 +108,38 @@
     <h2>Malware Analysis – HopHelper.exe</h2>
     <div class="grid">
         <div class="card">
-            <h3>HopHelper.exe – Malware Analysis Report</h3>
+            <h3>HopHelper.exe – Senior Malware Analysis Report</h3>
             <p>
-                Deep-dive static and dynamic analysis of HopHelper.exe in a sandbox environment, covering hash identification, registry persistence keys, HTTP-based C2 behaviour, IOCs, and MITRE ATT&amp;CK mapping.
+                Static and dynamic analysis of HopHelper.exe in a sandbox environment, covering hash identification, registry persistence keys, HTTP-based C2 behaviour, IOCs, and MITRE ATT&amp;CK mapping.
             </p>
             <small>Written in senior-level SOC / malware analyst format.</small><br>
-            <a href="Malware_Analysis.html" class="button">
-                View Malware Analysis Report
+            <a href="malware-analysis-senior.html" class="button">
+                View Malware Analysis
                 <span class="icon">&gt;&gt;</span>
             </a>
         </div>
-</div>
+    </div>
+    <div class="section-note">
+        Based on TryHackMe Advent of Cyber 2025 – Day 6: <em>Malware Analysis – Egg-xecutable</em>
+    </div>
+
+    <h2>Password Cracking &amp; Encrypted Files</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Encrypted Files – “A Cracking Christmas” (Day 9)</h3>
+            <p>
+                Senior-style investigation of weakly protected encrypted PDF and ZIP files. Demonstrates dictionary-based cracking with pdfcrack and John the Ripper, analysis of offline attack surfaces, detection opportunities, and defensive recommendations.
+            </p>
+            <small>Focuses on attacker workflow, SOC detection telemetry, and MITRE ATT&amp;CK mapping for password-based encryption misuse.</small><br>
+            <a href="password-cracking-report.html" class="button">
+                View Password Cracking Report
+                <span class="icon">&gt;&gt;</span>
+            </a>
+        </div>
+    </div>
+    <div class="section-note">
+        Based on TryHackMe Advent of Cyber 2025 – Day 9: <em>Passwords – A Cracking Christmas</em>
+    </div>
 
     <h2>Repository &amp; Source</h2>
     <p>
@@ -139,6 +160,3 @@
 </div>
 </body>
 </html>
-
-
-
