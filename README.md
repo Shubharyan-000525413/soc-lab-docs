@@ -72,7 +72,7 @@ Method 2 — GitHub Pages (Recommended)
 This repository is published via GitHub Pages.
 You can open the full project site here:
 
-👉 https://shubharyan-000525413.github.io/soc-lab-docs/
+👉 https://shubharyan-000525413.github.io/lab-docs/
 
 The landing page links to all investigation reports.
 
