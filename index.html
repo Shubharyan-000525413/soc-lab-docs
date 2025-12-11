@@ -11,9 +11,12 @@
 
     h1 { font-size:30px; color:#f9fafb; margin-bottom:6px; letter-spacing:.04em; text-transform:uppercase; }
     h2 { font-size:18px; color:#93c5fd; margin-top:30px; margin-bottom:10px; text-transform:uppercase; letter-spacing:.08em; }
+    h3 { font-size:15px; color:#e5e7eb; margin:0 0 6px 0; }
+
     p { font-size:14px; color:#9ca3af; line-height:1.6; }
 
     .subtitle { color:#9ca3af; font-size:13px; margin-bottom:25px; }
+
     .badge { display:inline-block; font-size:11px; text-transform:uppercase; letter-spacing:.08em; padding:3px 8px; border-radius:999px; border:1px solid #1f2937; background:#020617; color:#9ca3af; margin-right:6px; }
 
     .grid {
@@ -33,7 +36,6 @@
         overflow:hidden;
     }
 
-    .card h3 { margin:0 0 6px 0; font-size:15px; color:#e5e7eb; }
     .card p { font-size:13px; margin:6px 0 10px; color:#9ca3af; }
     .card small { font-size:11px; color:#6b7280; }
 
@@ -87,12 +89,14 @@
         Hands-on SOC and offensive/defensive security documentation from TryHackMe Advent of Cyber 2025, published via GitHub Pages.
     </div>
 
+    <!-- Splunk Section -->
     <h2>Splunk &amp; Log Analysis (SOC)</h2>
     <div class="grid">
         <div class="card">
             <h3>Splunk Web Application Compromise – Senior SOC Report</h3>
             <p>
-                Tier 2/3-style incident report of a web server compromise using Splunk: spike detection, attacker IP fingerprinting, SQLi and RCE reconstruction, C2 correlation, and MITRE ATT&amp;CK mapping.
+                Tier 2/3-style incident report of a web server compromise using Splunk: spike detection, attacker IP fingerprinting,
+                SQLi and RCE reconstruction, C2 correlation, and MITRE ATT&amp;CK mapping.
             </p>
             <small>Includes SPL queries, attack chain reconstruction, and remediation recommendations.</small><br>
             <a href="Splunk_Lab_Report.html" class="button">
@@ -105,12 +109,34 @@
         Based on TryHackMe Advent of Cyber 2025 – Day 3: <em>Splunk Basics – Did You SIEM?</em>
     </div>
 
+    <!-- Microsoft Sentinel Section -->
+    <h2>Cloud SIEM – Microsoft Sentinel</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Azure Linux PrivEsc Campaign – Tinsel Triage (Sentinel)</h3>
+            <p>
+                Microsoft Sentinel investigation focused on noisy Linux PrivEsc alerts: kernel module insertion, sudo abuse, Polkit exploit attempts,
+                SSH compromise, and reverse shells across multiple hosts, with structured triage and KQL-driven log analysis.
+            </p>
+            <small>Demonstrates alert triaging, entity correlation, KQL usage, and MITRE ATT&amp;CK mapping in a cloud-native SIEM.</small><br>
+            <a href="Sentinel_Triage.html" class="button">
+                View Sentinel Triage Report
+                <span class="icon">&gt;&gt;</span>
+            </a>
+        </div>
+    </div>
+    <div class="section-note">
+        Based on TryHackMe Advent of Cyber 2025 – Day 10: <em>SOC Alert Triaging – Tinsel Triage</em>
+    </div>
+
+    <!-- Malware Analysis Section -->
     <h2>Malware Analysis – HopHelper.exe</h2>
     <div class="grid">
         <div class="card">
             <h3>HopHelper.exe – Senior Malware Analysis Report</h3>
             <p>
-                Static and dynamic analysis of HopHelper.exe in a sandbox environment, covering hash identification, registry persistence keys, HTTP-based C2 behaviour, IOCs, and MITRE ATT&amp;CK mapping.
+                Static and dynamic analysis of HopHelper.exe in a sandbox environment, covering hash identification, registry persistence keys,
+                HTTP-based C2 behaviour, IOCs, and MITRE ATT&amp;CK mapping.
             </p>
             <small>Written in senior-level SOC / malware analyst format.</small><br>
             <a href="Malware_Analysis.html" class="button">
@@ -123,14 +149,16 @@
         Based on TryHackMe Advent of Cyber 2025 – Day 6: <em>Malware Analysis – Egg-xecutable</em>
     </div>
 
+    <!-- Password Cracking Section -->
     <h2>Password Cracking &amp; Encrypted Files</h2>
     <div class="grid">
         <div class="card">
             <h3>Encrypted Files – “A Cracking Christmas” (Day 9)</h3>
             <p>
-                Investigation of weakly protected encrypted PDF and ZIP files. Demonstrates dictionary-based cracking with pdfcrack and John the Ripper, analysis of offline attack surfaces, detection opportunities, and defensive recommendations.
+                Investigation of weakly protected encrypted PDF and ZIP files. Demonstrates dictionary-based cracking with pdfcrack and John the Ripper,
+                analysis of offline attack surfaces, detection opportunities, and defensive recommendations.
             </p>
-            <small>Focuses on attacker workflow, SOC detection telemetry, and MITRE ATT&amp;CK mapping for password-based encryption misuse.</small><br>
+            <small>Focuses on attacker workflow, SOC detection telemetry, and ATT&amp;CK coverage for password-based encryption misuse.</small><br>
             <a href="Password_Cracking.html" class="button">
                 View Password Cracking Report
                 <span class="icon">&gt;&gt;</span>
@@ -141,6 +169,7 @@
         Based on TryHackMe Advent of Cyber 2025 – Day 9: <em>Passwords – A Cracking Christmas</em>
     </div>
 
+    <!-- Repo Info -->
     <h2>Repository &amp; Source</h2>
     <p>
         All reports are maintained in the GitHub repository backing this GitHub Pages site:
@@ -151,7 +180,11 @@
         <span class="pill">SOC Portfolio</span>
     </p>
     <p style="font-size:13px;">
-URL: <a href="https://github.com/shubharyan-000525413/lab-docs" style="color:#60a5fa;text-decoration:none;">github.com/shubharyan-000525413/lab-docs</a>
+        URL:
+        <a href="https://github.com/shubharyan-000525413/lab-docs"
+           style="color:#60a5fa;text-decoration:none;">
+            github.com/shubharyan-000525413/lab-docs
+        </a>
     </p>
 
     <div class="footer">
@@ -160,6 +193,3 @@ URL: <a href="https://github.com/shubharyan-000525413/lab-docs" style="color:#60
 </div>
 </body>
 </html>
-
-
-
